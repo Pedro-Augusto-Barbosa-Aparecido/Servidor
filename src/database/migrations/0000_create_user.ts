@@ -5,7 +5,7 @@ export async function up (knex: Knex) {
         table.increments("id").primary();
         table.string("name", 70).notNullable();
         table.string("office", 30).notNullable();
-        table.string("email", 30).notNullable();
+        table.string("email", 30).notNullable().unique();
         table.boolean("is_admin").notNullable();
     });
 }

@@ -5,31 +5,31 @@ export async function seed (knex: Knex) {
         {
             name: "Pedro",
             office: "Professional",
-            email: "user@company.com",
+            email: "user1@company.com",
             is_admin: false
         },
         {
             name: "Pedro",
             office: "Boss",
-            email: "user@company.com",
+            email: "user2@company.com",
             is_admin: true
         },
         {
             name: "Pedro",
             office: "Professional",
-            email: "user@company.com",
+            email: "user3@company.com",
             is_admin: false
         },
         {
             name: "Pedro",
             office: "Professional",
-            email: "user@company.com",
+            email: "user4@company.com",
             is_admin: false
         },
         {
             name: "Pedro",
             office: "Professional",
-            email: "user@company.com",
+            email: "user5@company.com",
             is_admin: true
         },
     ]);

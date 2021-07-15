@@ -10,5 +10,8 @@ routes.get("/", (request, response) => {
 });
 
 routes.get("/user-list", user.index);
+routes.post("/user-create", user.create);
+routes.put("/user-update/:pk", user.update);
+routes.post("/user-delete/:pk", user.delete);
 
 export default routes;
