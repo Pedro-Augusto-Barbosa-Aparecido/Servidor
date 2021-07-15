@@ -9,7 +9,7 @@
     "dev": "ts-node-dev --ignore-watch node_modules src/index.ts",
     "migrate": "knex --knexfile knexfile.ts migrate:latest",
     "populate": "knex --knexfile knexfile.ts seed:run",
-    "start": "knex --knexfile knexfile.ts migrate:latest && ts-node-dev --ignore-watch node_modules src/index.ts"
+    "start": "knex --knexfile knexfile.ts migrate:latest && knex --knexfile knexfile.ts seed:run && ts-node-dev --ignore-watch node_modules src/index.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
